@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite" parallel="tests">
+
+<listeners>
+<listener class-name="com.SBM.qa.Generic.TestNGListner"/>
+</listeners>
+
+  <test  name="ChromeTest">
+   <parameter name="browser" value="Chrome"/>
+    <parameter name="instance" value="Instance01"/>
+  <parameter name="Environment" value="IN"/>
+    <packages>
+      <package name="com.SBM.qa.TestCases"/>
+    </packages>
+  </test> <!-- Test -->
+  
+   <test  name="IETest">
+   <parameter name="browser" value="IE"/>
+    <parameter name="instance" value="Instance01"/>
+  <parameter name="Environment" value="IT"/>
+    <packages>
+      <package name="com.SBM.qa.TestCases"/>
+    </packages>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

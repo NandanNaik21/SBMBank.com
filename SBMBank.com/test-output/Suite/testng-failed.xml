@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.SBM.qa.Generic.TestNGListner"/>
+  </listeners>
+  <test name="IETest(failed)">
+    <parameter name="instance" value="Instance01"/>
+    <parameter name="browser" value="IE"/>
+    <parameter name="Environment" value="IT"/>
+    <classes>
+      <class name="com.SBM.qa.TestCases.ValidLogin">
+        <methods>
+          <include name="testValidLogin"/>
+          <include name="launchbrowser"/>
+          <include name="tearDown"/>
+          <include name="setExtent"/>
+        </methods>
+      </class> <!-- com.SBM.qa.TestCases.ValidLogin -->
+    </classes>
+  </test> <!-- IETest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

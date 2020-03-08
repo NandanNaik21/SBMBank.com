@@ -1,0 +1,2 @@
+ScenarioName,Instance,url,username,password,Pagetitle
+ValidLogin,Instance01,http://localhost/login.do,admin,man,actiTIME - Enter Time-Track
