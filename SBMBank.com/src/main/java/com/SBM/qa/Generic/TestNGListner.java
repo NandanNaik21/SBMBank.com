@@ -32,7 +32,7 @@ public class TestNGListner implements ITestListener {
 
 	@Override
 	public void onTestSkipped(ITestResult result) {
-		System.out.println(result.getName()+" Test case validation is failed");
+		System.out.println(result.getName()+" Test case validation is skipped");
 		
 	}
 
@@ -43,7 +43,7 @@ public class TestNGListner implements ITestListener {
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
-		System.out.println(result.getName()+" Test case validation is Passed");
+		System.out.println(result.getName()+" Test case validation is Success");
 		
 	}
 
